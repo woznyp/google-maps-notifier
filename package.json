@@ -1,0 +1,23 @@
+{
+  "name": "google-maps-notifier",
+  "version": "1.0.0",
+  "description": "Node.js service that allows to send information about traffic on Google Maps.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woznyp/google-maps-notifier.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woznyp/google-maps-notifier/issues"
+  },
+  "homepage": "https://github.com/woznyp/google-maps-notifier#readme",
+  "dependencies": {
+    "nodemailer": "^4.4.1",
+    "phantomjs-prebuilt": "^2.1.16"
+  }
+}
