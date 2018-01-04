@@ -45,7 +45,7 @@
                     cid: 'mapimage'
                 }]
             };
-
+            
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
                     return console.log(error);
@@ -65,6 +65,7 @@
         generateImageFile(){
             const binPath = phantomjs.path,
             childArgs = [
+              '--ignore-ssl-errors=true',
               path.join(__dirname, 'image-generator.js'),
               config.image.name
             ];

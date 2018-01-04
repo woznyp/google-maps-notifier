@@ -10,14 +10,15 @@ function finish(){
     const window = page.evaluate(function(){
         return window;
     });
+    
+    const timeEnd = new Date().getTime();
 
     if(window.imageGenerated){
-        const timeEnd = new Date().getTime();
         page.render('./' + filename + '.jpg');
         console.log('map loaded in:' + (timeEnd - timeBegin) + 'ms');
         phantom.exit();
     } else {
-        console.log('waiting for map to be loaded');
+        console.log('waiting for map to be loaded; elapsed time:' + (timeEnd - timeBegin) + 'ms');
         setTimeout(finish, 250);
     }
 }
