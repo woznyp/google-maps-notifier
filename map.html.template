@@ -56,10 +56,7 @@
         trafficLayer.setMap(map);
 
         google.maps.event.addListenerOnce(map, 'tilesloaded', function(){
-          //waiting for google maps UI
-          setTimeout(function(){
-            window.imageGenerated=true;
-          },500);
+          console.log('maploaded'); // !important - don't remove this console.log - it triggers phantomjs event
         });
       }
     </script>
