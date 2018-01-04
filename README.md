@@ -1,4 +1,4 @@
-# Google Maps Notifier
+# Google Maps Traffic Notifier
 Node.js service that allows to send information about traffic on Google Maps.
 
 ## How to?
