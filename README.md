@@ -45,6 +45,10 @@ Example config.json:
 ```
 Google Maps Javascript API key
 
+## Known issues
+If phantomjs doesn't work on linux, install dependency:
+<code>sudo apt-get install libfontconfig</code>
+
 ### Author
 pawelpwozny@gmail.com
 
